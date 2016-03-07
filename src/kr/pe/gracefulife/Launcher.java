@@ -1,12 +1,12 @@
 package kr.pe.gracefulife;
 
-import kr.pe.gracefulife.observer.ObserverLauncher;
+import kr.pe.gracefulife.proxy.ProxyLauncher;
 
 public class Launcher {
 
     public static void main(String[] args) {
-//        Starter starter = new ChainOfResponsibilityLauncher();
-        Starter starter = new ObserverLauncher();
-        starter.start();
+//        new ChainOfResponsibilityLauncher().start();
+//        new ObserverLauncher().start();
+        new ProxyLauncher().start();
     }
 }
