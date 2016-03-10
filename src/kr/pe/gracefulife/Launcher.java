@@ -1,5 +1,6 @@
 package kr.pe.gracefulife;
 
+import kr.pe.gracefulife.chainofresponsibility.ChainOfResponsibilityLauncher;
 import kr.pe.gracefulife.proxy.ProxyLauncher;
 
 public class Launcher {

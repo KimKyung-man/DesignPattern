@@ -1,12 +1,8 @@
-package kr.pe.gracefulife.proxy.service.proxy;
-
-import kr.pe.gracefulife.proxy.service.UserService;
-import kr.pe.gracefulife.proxy.service.UserServiceImpl;
+package kr.pe.gracefulife.proxy.service.dynamic;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.util.List;
 
 /**
  * 매우매우 약식 Dynamic Proxy 클래스

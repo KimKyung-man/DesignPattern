@@ -18,13 +18,17 @@ public class ChainOfResponsibilityLauncher implements Starter {
         Supporter errorSupporter = new ErrorSupporter("ERROR SUPPORTER");
         Supporter faultSupporter = new FaultSupporter("FAULT SUPPORTER");
 
+
         faultSupporter.setNextItem(errorSupporter).setNextItem(bugSupporter);
 
         generateDefaultTroubleList().forEach(faultSupporter::support);
+        List<Trouble> troubles = generateDefaultTroubleList();
+        for(Trouble trouble : troubles){
+            faultSupporter.support(trouble);
+        }
     }
 
     public List<Trouble> generateDefaultTroubleList() {
-        System.out.println("generateDefaultTroubleList");
         List<Trouble> list = new ArrayList<>();
         list.add(new Trouble(CODE_BUG, "BUG ! "));
         list.add(new Trouble(CODE_ERROR, "ERROR ! "));
@@ -33,3 +37,4 @@ public class ChainOfResponsibilityLauncher implements Starter {
         return list;
     }
 }
+
