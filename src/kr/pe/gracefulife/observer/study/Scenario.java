@@ -1,4 +1,4 @@
-package kr.pe.gracefulife.observer;
+package kr.pe.gracefulife.observer.study;
 
 /**
  * Created by Gracefulife on 2016-03-02.

@@ -1,4 +1,4 @@
-package kr.pe.gracefulife.observer;
+package kr.pe.gracefulife.observer.study;
 
 import java.util.ArrayList;
 import java.util.List;

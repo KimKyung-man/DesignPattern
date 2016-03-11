@@ -1,6 +1,9 @@
-package kr.pe.gracefulife.observer;
+package kr.pe.gracefulife.observer.study;
 
 import kr.pe.gracefulife.Starter;
+import kr.pe.gracefulife.observer.study.Employee;
+import kr.pe.gracefulife.observer.study.Owner;
+import kr.pe.gracefulife.observer.study.SensorBasedCommuteSensor;
 
 import java.util.ArrayList;
 import java.util.List;
